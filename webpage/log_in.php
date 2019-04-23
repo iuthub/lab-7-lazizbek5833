@@ -13,7 +13,6 @@ include('connection.php');
 		<!-- Show this part if user is not signed in yet -->
 		<div class="twocols">
 			<form action="index.php" method="post" class="twocols_col">
-				<?php include('errors.php'); ?>
 				<ul class="form">
 					<li>
 						<label for="username">Username</label>

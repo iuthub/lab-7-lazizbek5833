@@ -17,14 +17,15 @@ include('connection.php');
 		<h2>User Details Form</h2>
 		<h4>Please, fill below fields correctly</h4>
 		<form action="register.php" method="post">
+			<?php include('errors.php'); ?>
 				<ul class="form">
 					<li>
 						<label for="username">Username</label>
-						<input type="text" name="username" id="username" required/>
+						<input type="text" name="username" id="username" />
 					</li>
 					<li>
 						<label for="fullname">Full Name</label>
-						<input type="text" name="fullname" id="fullname" required/>
+						<input type="text" name="fullname" id="fullname" />
 					</li>
 					<li>
 						<label for="email">Email</label>
@@ -32,16 +33,18 @@ include('connection.php');
 					</li>
 					<li>
 						<label for="pwd">Password</label>
-						<input type="password" name="pwd" id="pwd" required/>
+						<input type="password" name="pwd" id="pwd" />
 					</li>
 					<li>
 						<label for="confirm_pwd">Confirm Password</label>
-						<input type="password" name="confirm_pwd" id="confirm_pwd" required />
+						<input type="password" name="confirm_pwd" id="confirm_pwd"  />
 					</li>
 					<li>
-						<input type="submit" value="Submit" /> &nbsp; Already registered? <a href="index.php">Login</a>
+						<input type="submit" value="Submit"  name="reg_user"/> <br />
+						Already registered? <a href="index.php">Login</a>
 					</li>
 				</ul>
 		</form>
+		         
 	</body>
 </html>
